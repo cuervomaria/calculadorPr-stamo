@@ -19,7 +19,7 @@
         </div>
         <div class="row mt-2">
             <div class="col-12">
-                <form>
+                <form id="myForm">
                     <div class="form-group">
                         <label for="monto">Ingrese monto</label>
                         <input type="number" id="monto">
@@ -32,14 +32,14 @@
                             <option value="36">36 </option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-secondary" onclick="resultadoCotizacion()">Enviar</button>
+                    <button type="submit" class="btn btn-secondary" onclick="resultadoCotizacion()" >Enviar</button>
                     <button type="reset" class="btn btn-secondary">Borrar</button>
-                </form>
+                <!-- </form>
             </div>
         </div>
         <div class="row mt-2">
             <div class="col-12">
-                <form action="">
+                <form action=""> -->
                     <div class="form-group">
                         <label for="tasa">
                             Tasa de interés anual
@@ -61,6 +61,30 @@
                 </form>
             </div>
         </div>
+   <!--      <div class="row">
+            <div class="col-6">
+                <p>La tasa de interés anual para el plazo seleccionado es:</p>
+            </div>
+            <div class="col-6">
+                <p id="tasa"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>La cuota mensual asciende a: </p>
+            </div>
+            <div class="col-6">
+                <p id="cuota"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>El monto total a devolver asciende a: </p>
+            </div>
+            <div class="col-6">
+                <p id="montoDevolucion"></p>
+            </div>
+        </div> -->
     </div>
 
 

@@ -33,28 +33,29 @@ class Prestamo {
 var plazoSolicitado = prompt ("Ingrese plazo por el cual solicita el préstamo") */
 
 
-
 function resultadoCotizacion () {
 
-    /* console.log (prestamoSolicitado.calcularTasa())
-    console.log (prestamoSolicitado.calcularMontoTotalDevolver())
-    console.log (prestamoSolicitado.calcularCuotas())
-     */
-
+    
     var montoSolicitado = document.getElementById("monto").value;
     var p = document.getElementById("plazo")
     var plazoSolicitado = p.options[p.selectedIndex].value
     
-    
-    
+    var prestamoSolicitado = new Prestamo ( montoSolicitado, plazoSolicitado)
     
     var mostrarTasa = document.getElementById("tasa")
     var mostrarCuota = document.getElementById("cuota")
     var mostrarTotalDevolver= document.getElementById("montoDevolucion")
     
-    var prestamoSolicitado = new Prestamo ( montoSolicitado, plazoSolicitado)
+    
     mostrarTasa.value = prestamoSolicitado.calcularTasa()
     mostrarTotalDevolver.value = prestamoSolicitado.calcularMontoTotalDevolver()
     mostrarCuota.value =  prestamoSolicitado.calcularCuotas()
     return false
 }
+
+/* const form = document.getElementById("myForm");
+form.onsubmit = resultadoCotizacion;
+ */
+
+// poner de vuelta onclick y eliminar líneas Pepin
+//mostrar resultados de la función en el texto y los párrafos en lugar de en formulario
